@@ -5,6 +5,8 @@ Long story short, I use unifi cameras and want a way to detect events and fire m
 
 
 ## How do I use it?
+`go get -u github.com/tehzwen/unifi-watcher`
+
 - First you'll need to enable ssh on your unifi protect controller (https://help.ui.com/hc/en-us/articles/204909374-UniFi-Connect-with-SSH-Advanced)
 - Once that is enabled, you'll need to build your go project using the following flags
     - GOARCH=arm64

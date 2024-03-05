@@ -57,7 +57,6 @@ func (w *UnifiWatcher) Watch(eventFunc func(e UnifiEvent)) error {
 			if currentIndex == 0 {
 				currentDate = e.CreatedAt
 			}
-			// now mak
 			eventFunc(e)
 			w.NumEvents++
 			currentIndex++
