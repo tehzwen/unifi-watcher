@@ -1,0 +1,13 @@
+version: '3.4'
+services: 
+  local-db:
+    image: postgres:14-alpine
+    ports:
+      - 5433:5432
+    volumes:
+      - ./dataset:/docker-entrypoint-initdb.d
+    environment:
+      POSTGRES_USER: unifi-protect
+      POSTGRES_DB: unifi-protect
+      POSTGRES_HOST_AUTH_METHOD: trust
+  
