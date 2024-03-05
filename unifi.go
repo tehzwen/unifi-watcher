@@ -22,7 +22,7 @@ type UnifiEvent struct {
 	Type             string    `db:"type"`
 	CreatedAt        time.Time `db:"createdAt"`
 	CameraId         string    `db:"cameraId"`
-	SmartDetectTypes string    `db:"smartDetectTypes" json:"smartDetectTypes"`
+	SmartDetectTypes *string   `db:"smartDetectTypes" json:"smartDetectTypes"`
 }
 
 type UnifiWatcher struct {

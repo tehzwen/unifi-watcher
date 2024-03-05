@@ -10,4 +10,4 @@ CREATE TABLE events (
 
 -- insert some fake events
 INSERT INTO events("cameraId", "type", "createdAt", "smartDetectTypes") VALUES('12345', 'smartDetectZone', '2026-03-03 00:25:00.346+00', '["vehicle"]');
-INSERT INTO events("cameraId", "type", "createdAt", "smartDetectTypes") VALUES('12345', 'smartDetectZone', '2026-03-03 00:30:00.346+00', '["person"]');
+INSERT INTO events("cameraId", "type", "createdAt", "smartDetectTypes") VALUES('12345', 'smartDetectZone', '2026-03-03 00:30:00.346+00', NULL);
